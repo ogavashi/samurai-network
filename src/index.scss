@@ -21,7 +21,7 @@ code {
   display: grid;
   grid-template-areas:
     "h h h"
-    "n p p"
+    "n c c"
     "f f f";
   grid-template-rows: 1fr 10fr 1fr;
   grid-template-columns: 1fr 9fr;
@@ -36,8 +36,8 @@ code {
   grid-area: n;
 }
 
-.profileWrapper {
-  grid-area: p;
+.contentWrapper {
+  grid-area: c;
 }
 
 .footerWrapper {
