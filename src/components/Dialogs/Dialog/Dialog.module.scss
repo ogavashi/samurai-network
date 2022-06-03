@@ -1,0 +1,12 @@
+.dialog {
+  padding: 10px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &.active {
+    font-weight: 700;
+  }
+}

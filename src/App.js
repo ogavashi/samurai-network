@@ -2,8 +2,8 @@ import Profile from "./components/Profile";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Messages from "./components/Messages";
 import { Route, Routes } from "react-router-dom";
+import Dialogs from "./components/Dialogs";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div className="contentWrapper">
         <Routes>
           <Route path="/profile" element={<Profile />} />
-          <Route path="/messages" element={<Messages />} />
+          <Route path="/dialogs/*" element={<Dialogs />} />
         </Routes>
       </div>
       <Footer />

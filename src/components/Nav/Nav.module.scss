@@ -60,6 +60,10 @@
       &:active {
         background-color: rgba(141, 133, 133, 0.292);
       }
+      &.active {
+        border-radius: 15px;
+        background-color: rgba(141, 133, 133, 0.068);
+      }
     }
   }
 }

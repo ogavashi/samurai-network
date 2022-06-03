@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={styles.footer}>
         <div className={styles.footerInfo}>
           <a href="https://github.com/ogavashi" target="blank">
-            <img src="./images/github.png" className={styles.footerIcon} alt="github" />
+            <img src=".././images/github.png" className={styles.footerIcon} alt="github" />
           </a>
           <h3>Made by Oleg Gavashi</h3>
         </div>

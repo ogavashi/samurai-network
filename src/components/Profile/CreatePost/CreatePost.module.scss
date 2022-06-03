@@ -1,0 +1,44 @@
+.createPost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
+  background-color: #fdfdfd;
+
+  textarea {
+    margin: 5px;
+    outline: none;
+    padding: 10px;
+    width: 580px;
+    height: 70px;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
+  }
+
+  .postButonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    img {
+      cursor: pointer;
+      margin-right: 5px;
+      transition: 0.4s;
+      border-radius: 15px;
+      padding: 5px;
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        background-color: rgba(141, 133, 133, 0.292);
+      }
+    }
+  }
+}
