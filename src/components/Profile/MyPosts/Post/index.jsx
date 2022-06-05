@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Post.module.scss";
 
-const Post = () => {
+const Post = ({ text }) => {
   return (
     <div className={styles.postWrapper}>
       <div className={styles.postHeader}>
@@ -21,10 +21,7 @@ const Post = () => {
         </div>
       </div>
       <div className={styles.postContent}>
-        <p className={styles.postText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada tortor tellus.
-          Nunc quis vulputate est, id suscipit justo. Curabitur at massa felis.
-        </p>
+        <p className={styles.postText}>{text}</p>
         <div className={styles.postInteraction}>
           <img src="./images/heart.png" alt="like" />
         </div>
