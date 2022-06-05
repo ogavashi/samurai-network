@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./MyPosts.module.scss";
 import Post from "./Post";
 
-const posts = [
+const Posts = [
   {
     id: 1,
     text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada tortor tellus.Nunc quis vulputate est, id suscipit justo. Curabitur at massa felis.",
@@ -37,7 +37,7 @@ const MyPosts = () => {
         <h1>My posts</h1>
       </div>
       <div className={styles.myPosts}>
-        {posts.map((post) => (
+        {Posts.map((post) => (
           <Post text={post.text} key={post.id} />
         ))}
       </div>
