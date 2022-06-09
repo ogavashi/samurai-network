@@ -1,12 +1,33 @@
 .dialog {
-  padding: 10px;
+  margin: 5px;
+  transition: 0.3s;
+  border-radius: 15px;
 
   a {
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    padding: 10px;
   }
 
   &.active {
     font-weight: 700;
+  }
+  img {
+    margin: 10px;
+    width: 40px;
+    border-radius: 50px;
+  }
+
+  &:hover {
+    background-color: rgba(141, 133, 133, 0.068);
+  }
+
+  &:active {
+    background-color: rgba(141, 133, 133, 0.292);
   }
 }

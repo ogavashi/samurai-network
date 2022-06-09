@@ -5,14 +5,14 @@ import MyPosts from "./MyPosts";
 import styles from "./Profile.module.scss";
 import ProfileInfo from "./ProfileInfo";
 
-const Profile = () => {
+const Profile = ({ state }) => {
   return (
     <div className={styles.profile}>
       <div className={styles.userPage}>
         <ProfileInfo />
         <CreatePost />
       </div>
-      <MyPosts />
+      <MyPosts posts={state.posts} />
     </div>
   );
 };

@@ -3,56 +3,28 @@ import React from "react";
 import Dialog from "./Dialog";
 import styles from "./Dialogs.module.scss";
 import Message from "./Message";
+import CreateMessage from "./CreateMessage";
 
-const disalogs = [
-  {
-    name: "Vasya",
-    id: 1,
-  },
-  {
-    name: "Dima",
-    id: 2,
-  },
-  {
-    name: "Anton",
-    id: 3,
-  },
-  {
-    name: "Sveta",
-    id: 4,
-  },
-  {
-    name: "Sasha",
-    id: 5,
-  },
-  {
-    name: "Ivan",
-    id: 6,
-  },
-  {
-    name: "Roma",
-    id: 7,
-  },
-  {
-    name: "Petro",
-    id: 8,
-  },
-];
-
-const messages = ["Hello!", "Hello, how are you?", "I'm cool, thank you!"];
-
-const Dialogs = () => {
+const Dialogs = ({ state }) => {
   return (
     <div className={styles.dialogs}>
       <div className={styles.dialogsItems}>
-        {disalogs.map((dialog) => (
-          <Dialog name={dialog.name} id={dialog.id} key={dialog.id} />
+        {state.dialogs.map((dialog) => (
+          <Dialog name={dialog.name} avatart={dialog.avatart} id={dialog.id} key={dialog.id} />
         ))}
       </div>
-      <div className={styles.messages}>
-        {messages.map((message, index) => (
-          <Message message={message} key={index} />
-        ))}
+      <div className={styles.messagesWrapper}>
+        <div className={styles.messages}>
+          {state.messages.map((message) => (
+            <Message
+              message={message.text}
+              key={message.id}
+              timeStamp={message.timeStamp}
+              isSent={message.isSent}
+            />
+          ))}
+        </div>
+        <CreateMessage />
       </div>
     </div>
   );

@@ -5,15 +5,15 @@ import Nav from "./components/Nav";
 import { Route, Routes } from "react-router-dom";
 import Dialogs from "./components/Dialogs";
 
-function App() {
+function App({ state }) {
   return (
     <div className="app-wrapper">
       <Header />
       <Nav />
       <div className="contentWrapper">
         <Routes>
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/dialogs/*" element={<Dialogs />} />
+          <Route path="/profile" element={<Profile state={state.profilePage} />} />
+          <Route path="/dialogs/*" element={<Dialogs state={state.dialogsPage} />} />
         </Routes>
       </div>
       <Footer />

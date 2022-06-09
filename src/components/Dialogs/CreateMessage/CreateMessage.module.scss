@@ -1,0 +1,41 @@
+.createMessage {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  textarea {
+    padding: 10px;
+    margin: 0;
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
+    outline: none;
+    resize: none;
+  }
+
+  .createMessageButonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img {
+      top: 0;
+      bottom: 1;
+      cursor: pointer;
+      margin-right: 5px;
+      transition: 0.4s;
+      border-radius: 15px;
+      padding: 5px;
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        background-color: rgba(141, 133, 133, 0.292);
+      }
+    }
+  }
+}

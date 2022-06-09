@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className={styles.navWrapper}>
+    <nav className="navWrapper">
       <ul className={styles.nav}>
         <li className={getNavLinkClass("/profile")}>
           <Link to="/profile">
