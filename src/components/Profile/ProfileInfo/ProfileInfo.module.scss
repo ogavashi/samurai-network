@@ -7,11 +7,18 @@
   max-width: 700px;
   padding: 20px;
   height: fit-content;
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    //height: 200px;
+  }
+
   // change later
 
   img {
     margin: 20px;
     height: 250px;
+    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+      height: 200px;
+    }
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
   }
 

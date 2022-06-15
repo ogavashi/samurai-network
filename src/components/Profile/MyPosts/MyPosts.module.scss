@@ -13,6 +13,11 @@
 .myPosts {
   max-height: 600px;
   overflow-y: auto;
+
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    max-height: 400px;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
